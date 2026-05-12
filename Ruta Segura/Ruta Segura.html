@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Ruta Segura</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial;
+}
+
+/* ================= FONDO SIN PERDER CALIDAD ================= */
+
+body{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:flex-start;
+
+/* LOGO ORIGINAL SIN DISTORSIÓN */
+background-image:url("logo del proyecto.png");
+background-size:contain;   /* 🔥 mantiene calidad */
+background-repeat:no-repeat;
+background-position:right center;
+background-color:#020617;
+}
+
+/* ================= PANEL MENU ================= */
+
+.app{
+
+margin-left:80px; /* 👈 mueve menú a la izquierda */
+
+width:420px;
+
+background:rgba(15,23,42,.55);
+backdrop-filter:blur(12px);
+
+padding:50px;
+border-radius:22px;
+
+box-shadow:
+0 0 40px rgba(0,0,0,.7),
+0 0 60px rgba(59,130,246,.25);
+
+animation:entrada 1s ease;
+}
+
+@keyframes entrada{
+from{opacity:0;transform:translateX(-60px);}
+to{opacity:1;}
+}
+
+/* TITULO */
+
+.title{
+color:white;
+font-size:28px;
+font-weight:600;
+margin-bottom:40px;
+letter-spacing:2px;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* BOTONES */
+
+.card{
+background:rgba(59,130,246,.25);
+padding:25px;
+border-radius:14px;
+text-decoration:none;
+color:white;
+font-size:18px;
+display:flex;
+align-items:center;
+gap:15px;
+
+transition:.35s;
+}
+
+.card:hover{
+background:#facc15;
+color:black;
+transform:translateX(10px);
+box-shadow:0 0 20px #facc15;
+}
+
+.icon{
+font-size:28px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+<div class="title">SAFE ROUTE</div>
+
+<div class="dashboard">
+
+<a href="Cursos.html" class="card">
+<div class="icon">📚</div>
+Cursos
+</a>
+
+<a href="cuestionario.html" class="card">
+<div class="icon">📝</div>
+Cuestionario
+</a>
+
+<a href="Mapa Seguro.html" class="card">
+<div class="icon">🗺️</div>
+Mapa Seguro
+</a>
+
+<a href="Mi Progreso.html" class="card">
+<div class="icon">📊</div>
+Mi Progreso
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

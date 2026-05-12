@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Cursos - Safe Route</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#0f172a,#020617);
+color:white;
+padding:40px;
+}
+
+/* TITULO */
+h1{
+text-align:center;
+color:#facc15;
+margin-bottom:40px;
+}
+
+/* GRID */
+.cursos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+/* TARJETAS */
+.curso{
+background:#111827;
+padding:25px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,.5);
+transition:.3s;
+}
+
+.curso:hover{
+transform:scale(1.05);
+background:#1e293b;
+}
+
+.curso h2{
+color:#facc15;
+}
+
+.curso p{
+opacity:.85;
+margin-top:10px;
+line-height:1.5;
+}
+
+/* BOTON */
+button{
+margin-top:40px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+padding:12px 25px;
+border:none;
+background:#facc15;
+font-weight:bold;
+border-radius:10px;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>📚 Cursos Inteligentes Safe Route</h1>
+
+<div class="cursos">
+
+<div class="curso">
+<h2>🧭 Orientación y Mapas</h2>
+<p>
+Aprende a utilizar mapas digitales, elegir rutas eficientes,
+guardar ubicaciones importantes y evitar perderte dentro
+de la ciudad usando tecnología moderna.
+</p>
+</div>
+
+<div class="curso">
+<h2>🛡 Seguridad Personal Urbana</h2>
+<p>
+Consejos prácticos para moverte con confianza.
+Aprende cómo actuar en situaciones inesperadas,
+compartir tu ubicación y desplazarte de forma segura.
+</p>
+</div>
+
+<div class="curso">
+<h2>🚗 Movilidad Inteligente</h2>
+<p>
+Descubre cómo ahorrar tiempo al trasladarte,
+escoger rutas rápidas o seguras y usar el
+transporte urbano de forma inteligente.
+</p>
+</div>
+
+<div class="curso">
+<h2>📱 Tecnología Útil</h2>
+<p>
+Configura correctamente el GPS de tu celular,
+optimiza batería mientras usas mapas y aprende
+herramientas digitales que facilitan tu día.
+</p>
+</div>
+
+<div class="curso">
+<h2>🌎 Explorar la Ciudad</h2>
+<p>
+Encuentra lugares interesantes, zonas populares,
+sitios recomendados y rutas ideales para explorar
+la ciudad sin complicaciones.
+</p>
+</div>
+
+</div>
+
+<button onclick="volver()">⬅ Volver al Inicio</button>
+
+<script>
+function volver(){
+window.location.href="Ruta Segura.html";
+}
+</script>
+
+</body>
+</html>
