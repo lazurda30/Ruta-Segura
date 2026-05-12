@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mi Progreso | Ruta Segura</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial;
+}
+
+body{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url("logo del proyecto.png");
+
+background-size:contain;
+background-repeat:no-repeat;
+background-position:right center;
+background-color:#020617;
+
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+/* CONTENEDOR */
+.container{
+width:90%;
+max-width:900px;
+background:rgba(15,23,42,.6);
+backdrop-filter:blur(12px);
+padding:40px;
+border-radius:20px;
+box-shadow:0 0 40px rgba(0,0,0,.7);
+animation:fade 1s ease;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;}
+}
+
+h1{
+margin-bottom:30px;
+text-align:center;
+}
+
+/* TARJETAS */
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-bottom:35px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+text-align:center;
+font-size:18px;
+}
+
+/* BARRA PROGRESO */
+.progress-box{
+margin-bottom:35px;
+}
+
+.progress{
+width:100%;
+height:25px;
+background:#0f172a;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress-fill{
+height:100%;
+width:0%;
+background:#facc15;
+transition:2s;
+}
+
+/* LOGROS */
+.achievements{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.badge{
+background:#334155;
+padding:12px 18px;
+border-radius:20px;
+font-size:14px;
+}
+
+/* HISTORIAL */
+.history{
+margin-top:30px;
+}
+
+.history-item{
+background:#1e293b;
+padding:15px;
+margin-top:10px;
+border-radius:10px;
+}
+
+/* BOTON */
+.back{
+margin-top:30px;
+display:block;
+text-align:center;
+text-decoration:none;
+background:#facc15;
+color:black;
+padding:12px;
+border-radius:10px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📊 Mi Progreso</h1>
+
+<!-- ESTADISTICAS -->
+<div class="stats">
+
+<div class="card">
+📝 Cuestionarios<br><b id="quiz">5</b>
+</div>
+
+<div class="card">
+✅ Correctas<br><b id="correct">42</b>
+</div>
+
+<div class="card">
+❌ Incorrectas<br><b id="wrong">8</b>
+</div>
+
+<div class="card">
+⭐ Promedio<br><b id="average">84%</b>
+</div>
+
+</div>
+
+<!-- PROGRESO GENERAL -->
+<div class="progress-box">
+<h3>Progreso General</h3>
+
+<div class="progress">
+<div class="progress-fill" id="progress"></div>
+</div>
+
+</div>
+
+<!-- LOGROS -->
+<h3>🏆 Logros</h3>
+
+<div class="achievements">
+<div class="badge">🥇 Primer Examen</div>
+<div class="badge">🚦 Experto en Señales</div>
+<div class="badge">🔥 5 Cuestionarios</div>
+<div class="badge">🎯 40 Respuestas Correctas</div>
+</div>
+
+<!-- HISTORIAL -->
+<div class="history">
+<h3>📅 Historial</h3>
+
+<div class="history-item">✔ Fácil — 80% — Hoy</div>
+<div class="history-item">✔ Medio — 85% — Ayer</div>
+<div class="history-item">✔ Difícil — 90% — Hace 2 días</div>
+
+</div>
+
+<a href="Ruta Segura.html" class="back">⬅ Volver al Inicio</a>
+
+</div>
+
+<script>
+
+/* Animar barra */
+setTimeout(()=>{
+document.getElementById("progress").style.width="75%";
+},400);
+
+</script>
+
+</body>
+</html>
